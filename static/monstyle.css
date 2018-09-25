@@ -1,0 +1,56 @@
+/* STYLE DU BOUTON ALLUMER*/
+
+.on{
+width:120px; /*largeur du bouton*/
+height:120px; /*hauteur du bouton*/
+background-color:#08d40f; /*couleur du fond --> vert ici*/
+border:1px solid #08d40f; /*bordure de la meme couleur que le fond*/
+color:#fff;
+font-size:1.6em;
+/*Fixe le rayon de coubure des coins du bouton a la moitie de sa hauteur --> cercle*/
+-webkit-border-radius: 60px;
+-moz-border-radius: 60px;
+border-radius: 60px;
+/*ajout d'une petite ombre portee*/
+-webkit-box-shadow: 0 0 10px rgba(0,0,0, .75);
+-moz-box-shadow: 0 0 10px rgba(0,0,0, .75);
+box-shadow: 2px 2px 15px rgba(0,0,0, .75);
+}
+/***Definit ici le style lorsque l'on survole le bouton***/
+.on:hover{
+background:#058009; /* couleur vert fonce ici*/
+border:1px solid #058009;
+/*reduit la largeur de l'ombre pour donner un effet d'appui*/
+-webkit-box-shadow: 0px 0px 5px rgba(0,0,0, .75);
+-moz-box-shadow: 0px 0px 5px rgba(0,0,0, .75);
+box-shadow: 0px 0px 5px rgba(0,0,0, .75);
+}
+
+/* STYLE DU BOUTON ETEINDRE*/
+
+.off{
+width:120px; /*largeur du bouton*/
+height:120px; /*hauteur du bouton*/
+background-color:#ff0000; /*couleur du fond --> rouge ici*/
+border:1px solid #ff0000; /*bordure de la meme couleur que le fond*/
+color:#fff;
+font-size:1.6em;
+/*Fixe le rayon de coubure des coins du bouton a la moitie de sa hauteur --> cercle*/
+-webkit-border-radius: 60px;
+-moz-border-radius: 60px;
+border-radius: 60px;
+/*ajout d'une petite ombre portee*/
+-webkit-box-shadow: 0 0 10px rgba(0,0,0, .75);
+-moz-box-shadow: 0 0 10px rgba(0,0,0, .75);
+box-shadow: 2px 2px 15px rgba(0,0,0, .75);
+}
+/***Definit ici le style lorsque l'on survole le bouton***/
+.off:hover{
+background:#c20b0b; /* couleur rouge fonce ici*/
+border:1px solid #c20b0b;
+/*reduit la largeur de l'ombre pour donner un effet d'appui*/
+-webkit-box-shadow: 0px 0px 5px rgba(0,0,0, .75);
+-moz-box-shadow: 0px 0px 5px rgba(0,0,0, .75);
+box-shadow: 0px 0px 5px rgba(0,0,0, .75);
+}
+
