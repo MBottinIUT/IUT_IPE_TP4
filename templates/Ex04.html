@@ -1,0 +1,24 @@
+<html>
+	<head>
+		<title>COULEUR</title>
+		<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+	</head>
+	<body>
+		<h1>CHOIX DE LA COULEUR A DISTANCE</h1>
+		<h3>(mode RVB - choix par 3 curseurs)</h3>
+		<form method="post" action="{{url_for('change')}}">
+			<div class="slidecontainer">
+				<p>Rouge:</p>
+				<input type="range" min="0" max="255" class="slider" value={{valr}} name="rouge">
+				<p>Vert:</p>
+				<input type="range" min"0" max="255" class="slider" value={{valv}} name="vert">
+				<p>Bleu:</p>
+				<input type="range" min="0" max="255" class="slider" value={{valb}} name="bleu">
+			<p>Cliquez sur envoyer</p>
+			<input type="submit" name="switch" value="Envoyer"/>
+			</div>
+		</form>
+	</body>
+</html>
+
+
